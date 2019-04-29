@@ -14,11 +14,12 @@ import java.awt.event.ActionListener;
 	import java.util.logging.Level;
 	import java.util.logging.Logger;
 	import javax.swing.*;
+import static javax.swing.JOptionPane.showInputDialog;
 	 
 	/**Clase que se encarga de correr los threads de enviar y recibir texto
 	 * y de crear la interfaz grafica.
 	 *
-	 * @author cwfo
+	 * @author cwfp
 	 */
 	public class PrincipalChat extends JFrame{
 	    public JTextField campoTexto; //Para mostrar mensajes de los usuarios
@@ -40,7 +41,7 @@ import java.awt.event.ActionListener;
 	        areaTexto = new JTextArea(); //Crear displayArea
 	        areaTexto.setEditable(false);
 	        add(new JScrollPane(areaTexto), BorderLayout.CENTER);
-	        areaTexto.setBackground(Color.orange); //Pone de color  al displayArea
+	        areaTexto.setBackground(Color.red); //Pone de color  al displayArea
 	        areaTexto.setForeground(Color.BLACK); //pinta azul la letra en el displayArea
 	        campoTexto.setForeground(Color.BLACK); //pinta toja la letra del mensaje a enviar
 	       
@@ -49,7 +50,7 @@ import java.awt.event.ActionListener;
 	        JMenu menuArchivo = new JMenu("Archivo");
                 JMenuItem nombre = new JMenuItem("Nombre");
 	        JMenuItem salir = new JMenuItem("Salir");
-                menuArchivo.add(nombre);
+              ;
 	        menuArchivo.add(salir); //Agrega el submenu Salir al menu menuArchivo
 	       
 	        JMenuBar barra = new JMenuBar(); //Crea la barra de menus
